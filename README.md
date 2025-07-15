@@ -1,18 +1,20 @@
-## Getting Started
+# Java Chat Application
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository features a fully functional **real-time chat application** built using Java. It leverages Java's powerful **networking** capabilities alongside the **Swing GUI toolkit** to deliver a dynamic, user-friendly messaging experience between clients on a local network.
 
-## Folder Structure
+## Features
 
-The workspace contains two folders by default, where:
+- 🧑‍💻 Real-time message broadcasting between multiple clients  
+- ⏰ Timestamps and usernames on every message  
+- 🚪 Graceful client exits with system message alerts  
+- 🪟 Simple, responsive Swing-based UI  
+- 🧠 Modular, readable Java codebase with room for customization
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 📁 Project Structure
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```plaintext
+.
+├── ChatServer.java          # Handles incoming connections and broadcasts messages
+├── ChatClient.java          # Connects to the server, handles message sending/receiving
+├── ChatClientGUI.java       # GUI frontend for the chat client using Swing
+└── README.md
